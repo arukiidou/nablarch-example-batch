@@ -29,9 +29,9 @@ Gitを使用しない場合、最新のタグからzipをダウンロードし�
     $cd nablarch-example-batch
     $mvn package
 
-※データベースのセットアップ及びエンティティクラスの作成処理を行う`mvn generate-resources`は実行時に含まれているため、明示的に実行する必要はありません。
+※データベースのセットアップ及びエンティティクラスの作成処理を行う`mvn generate-resources`は`mvn package`実行する際に含まれていますが、個別に実行することもできます。
 
-※個別に`mvn generate-resources`を実行する場合は、gspプラグインをJava 17で実行するためにはJVMオプションの指定が必要ですが、そのオプションは`.mvn/jvm.config`で指定しています。
+※`mvn generate-resources`を実行する場合、gspプラグインをJava 17で実行するためにはJVMオプションの指定が必要ですが、そのオプションは`.mvn/jvm.config`で指定しています。
     
 実行に成功すると、以下のようなログがコンソールに出力されます。
 
